@@ -1,4 +1,4 @@
-# fullstack-phonebook
+# fullstack-phonebook-appV2.0
 
 ## SETUP:
 
