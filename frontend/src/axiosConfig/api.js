@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: 'https://connections-api.herokuapp.com/',
+  baseURL: 'http://localhost:8000/api',
+  // baseURL: 'https://connections-api.herokuapp.com/',
+
 });
 
 export const setToken = token => {
@@ -10,3 +12,5 @@ export const setToken = token => {
 export const clearToken = () => {
   api.defaults.headers.common.Authorization = ``;
 };
+
+

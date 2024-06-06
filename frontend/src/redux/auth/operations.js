@@ -1,18 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-// import { api, clearToken, setToken } from 'axiosConfig/api';
-import { createAsyncThunk } from '@reduxjs/toolkit';
-
-axios.defaults.baseURL = 'http://localhost:8000/api';
-
-// Utility to add JWT
-const setAuthHeader = token => {
-  axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-};
-
-// Utility to remove JWT
-const clearAuthHeader = () => {
-  axios.defaults.headers.common.Authorization = '';
-};
+import { api, clearToken, setToken } from 'axiosConfig/api';
 
 export const userRegister = createAsyncThunk(
   'users/registerUser',
